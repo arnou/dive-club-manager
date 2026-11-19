@@ -1,0 +1,27 @@
+services:
+  db:
+    image: postgres:16
+    environment:
+      POSTGRES_USER: diveclub
+      POSTGRES_DB: diveclub
+      POSTGRES_PASSWORD: ${POSTGRES_PASSWORD:?Définir POSTGRES_PASSWORD dans .env}
+    volumes:
+      - postgres:/var/lib/postgresql/data
+    healthcheck:
+      test: ["CMD-SHELL", "pg_isready -U diveclub -d diveclub"]
+      interval: 5s
+      timeout: 5s
+      retries: 10
+  app:
+    build: .
+    environment:
+      HOST: 0.0.0.0
+      DATABASE_URL: postgresql://diveclub:${POSTGRES_PASSWORD}@db:5432/diveclub
+      SAFETY_SIGNING_KEY: ${SAFETY_SIGNING_KEY:?Définir SAFETY_SIGNING_KEY dans .env}
+    ports:
+      - "127.0.0.1:3000:3000"
+    depends_on:
+      db:
+        condition: service_healthy
+volumes:
+  postgres:

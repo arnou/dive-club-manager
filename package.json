@@ -1,0 +1,38 @@
+{
+  "name": "ya-plouf",
+  "description": "Y'a plouf !, application de gestion de clubs de plongée.",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/arnou/ya-plouf.git"
+  },
+  "private": true,
+  "type": "module",
+  "license": "AGPL-3.0-only",
+  "engines": { "node": ">=22.19" },
+  "workspaces": ["apps/*", "packages/*"],
+  "scripts": {
+    "check": "tsc --noEmit",
+    "test": "node --experimental-strip-types --test tests/*.test.ts",
+    "build": "tsc --noEmit && vite build apps/web",
+    "start": "node --experimental-strip-types apps/api/node.ts",
+    "dev:web": "vite apps/web",
+    "migrate": "node --experimental-strip-types scripts/migrate.ts",
+    "demo": "node --experimental-strip-types scripts/demo.ts"
+  },
+  "dependencies": {
+    "@hono/node-server": "^1.19.0",
+    "hono": "^4.10.0",
+    "pg": "^8.16.0",
+    "react": "^19.2.0",
+    "react-dom": "^19.2.0",
+    "zod": "^4.1.0"
+  },
+  "devDependencies": {
+    "@types/node": "^22.19.0",
+    "@types/pg": "^8.15.0",
+    "@types/react": "^19.2.0",
+    "@types/react-dom": "^19.2.0",
+    "typescript": "^5.9.3",
+    "vite": "^7.2.0"
+  }
+}

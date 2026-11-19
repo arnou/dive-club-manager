@@ -1,0 +1,24 @@
+:root { font-family: system-ui, sans-serif; color: #17313a; background: #f4f8f9; line-height: 1.5; }
+body { margin: 0; }
+main { max-width: 54rem; margin: auto; padding: clamp(1rem, 4vw, 3rem); }
+h1, h2 { line-height: 1.2; }
+h1 { border-bottom: 3px solid #167181; padding-bottom: 1rem; }
+h2 { font-size: 1.4rem; }
+section { margin-block: 2rem; }
+form, label { display: grid; gap: .4rem; }
+form { max-width: 30rem; gap: .85rem; }
+input, button { font: inherit; border-radius: .35rem; padding: .45rem .7rem; }
+input { border: 1px solid #657c86; min-width: 0; }
+button { background: #125e6e; border: 1px solid transparent; color: white; cursor: pointer; width: fit-content; }
+button:disabled { opacity: .65; cursor: default; }
+button:focus-visible, input:focus-visible, summary:focus-visible { outline: 3px solid #2a667e; outline-offset: 3px; }
+fieldset { margin: 0; padding: 0; border: 0; min-width: 0; }
+.toolbar { display: flex; gap: 1rem; flex-wrap: wrap; justify-content: space-between; align-items: center; }
+.participants { padding: 0; list-style: none; display: grid; gap: .65rem; }
+.participants > li { border: 1px solid #ccdbe1; border-radius: .5rem; padding: .85rem; background: white; }
+li > button { display: block; margin-top: .5rem; }
+.alerts { color: #79461a; padding-left: 1.25rem; }
+details { margin: .75rem 0; }
+summary { cursor: pointer; }
+details form { margin-top: 1rem; }
+.checkbox { grid-template-columns: auto 1fr; align-items: baseline; }

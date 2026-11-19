@@ -2,7 +2,7 @@
 
 ## Objectif
 
-**Dive Club Manager** est une application web progressive (PWA), open source **AGPL-3.0**, destinée à gérer les activités d'un club de plongée, de l'annonce d'une sortie à sa clôture financière. Elle doit être réutilisable par d'autres associations et déployable indépendamment d'un hébergeur particulier.
+**Y'a plouf !** est une application web progressive (PWA), open source **AGPL-3.0**, destinée à gérer les activités d'un club de plongée, de l'annonce d'une sortie à sa clôture financière. Elle doit être réutilisable par d'autres associations et déployable indépendamment d'un hébergeur particulier.
 
 ## Principaux utilisateurs
 
