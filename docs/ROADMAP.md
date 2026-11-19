@@ -4,7 +4,7 @@
 
 ## Étape 0 — Fondations open source
 
-- [ ] Dépôt public et licence AGPL-3.0 complète.
+- [x] Dépôt public et licence AGPL-3.0 complète.
 - [ ] Monorepo agnostique : web, API portable, domaine, application, adaptateurs.
 - [ ] Démarrage local Docker Compose avec PostgreSQL.
 - [ ] CI : lint, typage, tests, build, sécurité des dépendances.

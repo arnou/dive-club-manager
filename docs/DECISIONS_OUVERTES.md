@@ -21,7 +21,7 @@
 - [ ] Protocole de synchronisation : conflits, récupération de terminal perdu et versions de schéma.
 - [ ] Démarrage local Docker Compose et pipelines de déploiement.
 - [ ] Politique de données personnelles, données CACI et RGPD.
-- [ ] Vérifier et intégrer le texte intégral AGPL-3.0 dans `LICENSE` avant publication officielle.
+- [x] Vérifier et intégrer le texte intégral AGPL-3.0 dans `LICENSE` avant publication officielle.
 
 ## Décisions déjà prises
 
