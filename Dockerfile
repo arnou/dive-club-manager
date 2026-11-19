@@ -1,4 +1,6 @@
 FROM node:22-bookworm-slim
+LABEL org.opencontainers.image.title="Y'a plouf !" \
+      org.opencontainers.image.source="https://github.com/arnou/ya-plouf"
 WORKDIR /app
 COPY package.json package-lock.json tsconfig.json ./
 COPY apps ./apps
