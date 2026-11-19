@@ -1,4 +1,6 @@
-# Dive Club Manager
+# Y'a plouf !
+
+[Dépôt GitHub](https://github.com/arnou/ya-plouf)
 
 Application **open source AGPL-3.0** de gestion de clubs de plongée, de l'inscription à la sortie à la feuille de sécurité et à la feuille de frais.
 

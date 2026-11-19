@@ -1,6 +1,6 @@
 # Prompt de démarrage Codex
 
-Je reprends le développement du projet `arnou/dive-club-manager` après une phase de cadrage dans ChatGPT.
+Je reprends le développement du projet `arnou/ya-plouf` après une phase de cadrage dans ChatGPT.
 
 1. Lis intégralement `AGENTS.md` et `docs/PROJECT_CONTEXT.md`.
 2. Inspecte l'état réel du dépôt (code, migrations, tests, documentation et GitHub issues). Ne présume pas que les fonctionnalités décrites sont déjà codées.

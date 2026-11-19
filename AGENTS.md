@@ -1,12 +1,12 @@
 
-# AGENTS.md — Dive Club Manager
+# AGENTS.md — Y'a plouf !
 
 ## 1. Project overview
 
-Dive Club Manager is an open-source web application for
+Y'a plouf ! is an open-source web application for
 managing scuba diving club activities.
 
-Repository: https://github.com/arnou/dive-club-manager
+Repository: https://github.com/arnou/ya-plouf
 License: AGPL-3.0
 Default branch: main
 
@@ -412,7 +412,7 @@ If a test cannot be run, document why in the PR.
 
 ## 15. GitHub issue workflow
 
-Repository: arnou/dive-club-manager
+Repository: arnou/ya-plouf
 Base branch: main
 
 When the user asks to implement a GitHub issue

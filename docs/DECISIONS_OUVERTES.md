@@ -25,7 +25,7 @@
 
 ## Décisions déjà prises
 
-- [x] Dépôt public `dive-club-manager`, licence AGPL-3.0.
+- [x] Dépôt public `ya-plouf`, licence AGPL-3.0.
 - [x] Architecture indépendante de Cloudflare ; Cloudflare première cible possible.
 - [x] PWA React/TypeScript avec IndexedDB et mode hors ligne réservé à un appareil DP par sortie.
 - [x] Premier calendrier : **Google Agenda partagé** de l'association.

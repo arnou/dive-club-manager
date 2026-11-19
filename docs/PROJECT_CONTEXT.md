@@ -1,9 +1,9 @@
-# Dive Club Manager — Project context for Codex
+# Y'a plouf ! — Project context for Codex
 
 > Handoff summary of a prior ChatGPT conversation. This is a product specification and decision log, **not** evidence that code, documentation, or GitHub issues are fully implemented. Inspect the repository to establish actual state.
 
 ## Repository and project management
-- GitHub: https://github.com/arnou/dive-club-manager
+- GitHub: https://github.com/arnou/ya-plouf
 - Public open-source license target: AGPL-3.0.
 - A Python `import_issues.py` was discussed for 27 GitHub issues, labels, and five milestones. A previous version used unsupported `gh api --slurp`; corrected parsing used `json.JSONDecoder.raw_decode` over concatenated pages. Verify the actual script in the repository before relying on it.
 - Intended milestones:
@@ -13,7 +13,7 @@
   - M4 - Formations et finances
   - M5 - Qualite et deploiement
 - Recommended GitHub Project views: detailed Backlog, Kanban, concise Roadmap with five `epic` issues filtered by `label:epic`. `Priority` is a manually created single-select field, not automatically synchronized with priority labels.
-- GitHub issue #13: https://github.com/arnou/dive-club-manager/issues/13 — 'Initialiser la feuille de sécurité depuis les inscriptions'. Its initial acceptance criteria were DP-triggered initialization, manual add/remove, and reimport without overwriting validated edits.
+- GitHub issue #13: https://github.com/arnou/ya-plouf/issues/13 — 'Initialiser la feuille de sécurité depuis les inscriptions'. Its initial acceptance criteria were DP-triggered initialization, manual add/remove, and reimport without overwriting validated edits.
 
 ## Product scope
 ### Members
