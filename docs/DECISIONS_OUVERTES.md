@@ -33,3 +33,11 @@
 - [x] Niveau **détenu en vigueur**, non niveau en préparation, repris de la base adhérents.
 - [x] Dernier CACI repris de la base adhérents lors de la préparation.
 - [x] Tarif unique par plongée réalisée et règles strictes encadrant/crédit.
+
+## Arbitrages de la feuille de sécurité (#13)
+
+- [x] Seul le DP désigné pour la sortie peut initialiser la feuille, sans délégation.
+- [x] L’initialisation est manuelle dès le premier inscrit confirmé, y compris pendant que les inscriptions sont ouvertes. La création d’une feuille vide est refusée.
+- [x] Le DP peut ajouter un invité non adhérent. Il consigne la vérification de l’identité, du niveau détenu, des qualifications utiles et de la date du dernier CACI lorsqu’elle est connue.
+- [x] Un CACI absent ou expiré donne lieu à une alerte à examiner par le DP. En attendant le référentiel du club, le système affiche la validité comme étant à vérifier lorsqu’une date est renseignée.
+- [x] Chaque changement de niveau détenu ou de CACI après l’import demande une approbation explicite du DP et donne lieu à un audit.
