@@ -11,6 +11,17 @@ const token = randomBytes(32).toString("base64url");
 
 try {
   await client.query("BEGIN");
+  if (process.env.PREVIEW_SCHEMA) {
+    if (!/^preview_pr_\d+$/.test(process.env.PREVIEW_SCHEMA)) throw new Error("PREVIEW_SCHEMA invalide.");
+    await client.query(`SET LOCAL search_path TO "${process.env.PREVIEW_SCHEMA}", public`);
+  }
+  const { rowCount } = await client.query("SELECT 1 FROM app_user LIMIT 1");
+  if (rowCount) {
+    console.log("Données fictives déjà présentes.");
+    client.release();
+    await pool.end();
+    process.exit(0);
+  }
   await client.query("INSERT INTO app_user (id) VALUES ($1)", [userId]);
   await client.query("INSERT INTO app_session VALUES ($1, $2, now() + interval '8 hours')", [
     createHash("sha256").update(token).digest("hex"), userId,
