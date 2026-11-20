@@ -38,9 +38,6 @@ jobs:
       CLOUDFLARE_ACCOUNT_ID: ${{ secrets.CLOUDFLARE_ACCOUNT_ID }}
       CLOUDFLARE_API_TOKEN: ${{ secrets.CLOUDFLARE_API_TOKEN }}
       HYPERDRIVE_ID: ${{ secrets.PREVIEW_HYPERDRIVE_ID }}
-      CLOUDFLARE_ACCOUNT_ID: ${{ secrets.CLOUDFLARE_ACCOUNT_ID }}
-      CLOUDFLARE_API_TOKEN: ${{ secrets.CLOUDFLARE_API_TOKEN }}
-      HYPERDRIVE_ID: ${{ secrets.PREVIEW_HYPERDRIVE_ID }}
       WORKERS_SUBDOMAIN: ${{ secrets.CLOUDFLARE_WORKERS_SUBDOMAIN }}
       SAFETY_SIGNING_KEY: ${{ secrets.PREVIEW_SAFETY_SIGNING_KEY }}
     steps:
@@ -110,6 +107,9 @@ jobs:
     runs-on: ubuntu-latest
     env:
       DATABASE_URL: ${{ secrets.PREVIEW_DATABASE_URL }}
+      CLOUDFLARE_ACCOUNT_ID: ${{ secrets.CLOUDFLARE_ACCOUNT_ID }}
+      CLOUDFLARE_API_TOKEN: ${{ secrets.CLOUDFLARE_API_TOKEN }}
+      HYPERDRIVE_ID: ${{ secrets.PREVIEW_HYPERDRIVE_ID }}
     steps:
       - uses: actions/checkout@v4
       - uses: actions/setup-node@v4
